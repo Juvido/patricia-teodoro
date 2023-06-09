@@ -6,11 +6,13 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Signup } from "./pages/Signup";
+import { Navbar } from "../src/components/Navbar";
 
 function App() {
   return (
     <>
       <AuthContextComponent>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
