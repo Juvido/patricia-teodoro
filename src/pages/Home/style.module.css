@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0.5em 2em;
+}
+
+.cardRow {
+  display: flex;
+  gap: 30px;
+}
