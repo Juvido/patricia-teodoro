@@ -1,8 +1,6 @@
-.main {
-    margin: 1em;
-}
 .cardContainer {
   position: relative;
+  margin-top: 150px;
 }
 
 .img {
@@ -33,29 +31,4 @@
   font-size: 24px;
   line-height: 38px;
   color: #421153;
-}
-
-.linkHome {
-  width: 51px;
-  height: 32px;
-  left: 40px;
-  top: 193px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0.04em;
-  color: #626262;
-}
-
-.servicos {
-    width: 319px;
-height: 77px;
-left: 40px;
-top: 242px;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 77px;
-color: #000000;
 }

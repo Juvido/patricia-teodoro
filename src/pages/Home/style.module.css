@@ -1,12 +1,59 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin: 0.5em 2em;
+  height: 60vh;
+  margin: 0 2em;
 }
 
 .cardRow {
   display: flex;
+  margin-top: 19px;
   gap: 30px;
+}
+
+.linkHome {
+  width: 51px;
+  height: 32px;
+  margin-left: 40px;
+  margin-top: 40px;
+  letter-spacing: 0.04em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #626262;
+}
+
+.servicos {
+  width: 319px;
+  height: 77px;
+  left: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 77px;
+  color: #000000;
+}
+
+.textInvestors {
+  text-align: center;
+  align-self: center;
+  width: 569px;
+  height: 59px;
+  left: 442px;
+  margin-top: 200px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 77px;
+  color: #000000;
 }

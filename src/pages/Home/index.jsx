@@ -20,7 +20,7 @@ export function Home() {
           <Card cardTitle="CONSULTORIA COMPLETA" img={Card4} />
         </div>
       </div>
-      <h3> Conheça quem já investiu! </h3>
+      <h3 className={style.textInvestors}> Conheça quem já investiu! </h3>
     </div>
   );
 }

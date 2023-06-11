@@ -19,7 +19,7 @@ export function Navbar() {
 
   return (
     <>
-      <div className="mx-auto flex py-10 items-center justify-around p-6 lg:px-8 quad-background h-auto">
+      <div className="mx-auto flex items-center justify-around  lg:px-8 quad-background h-auto">
         <a> Sobre </a>
         <a> Servicos </a>
         <img src={Logo} alt="Patricia Teodoro" />
