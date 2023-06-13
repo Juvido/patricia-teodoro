@@ -7,6 +7,7 @@ import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Signup } from "./pages/Signup";
 import { Navbar } from "../src/components/Navbar";
+import { CompleteCons } from "./pages/CompleteCons";
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/consultoria-completa" element={<CompleteCons />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route
             path="/profile"
             element={<AuthRouteProtector component={Profile} />}
           />
-
+          
           <Route path="*" element={<Error />} />
         </Routes>
       </AuthContextComponent>

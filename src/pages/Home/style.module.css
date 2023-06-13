@@ -1,4 +1,4 @@
-.main{
+.main {
   display: flex;
   flex-direction: column;
   margin: 1em;
@@ -45,15 +45,33 @@
   color: #000000;
 }
 
+.arrowIcon {
+  width: 20px;
+  height: 20px;
+  color: #421153;
+  font-size: 30px;
+  font-style: bolder;
+}
+
 .textInvestors {
   text-align: center;
   align-self: center;
   width: 569px;
   height: 59px;
   left: 442px;
-  margin-top: 200px;
+  margin-top: 250px;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 30px;
   line-height: 77px;
   color: #000000;
+}
+
+.investorSection {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }

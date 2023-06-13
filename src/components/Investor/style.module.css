@@ -1,0 +1,32 @@
+.img {
+  width: 430px;
+  height: 275px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.img:hover{
+  mix-blend-mode: luminosity;
+}
+
+.investorText {
+  width: 433px;
+  height: 55px;
+  margin: 20px 0 11px 0;
+  text-align: center;
+}
+
+.investorStars {
+  text-align: center;
+  color: #98758e;
+  height: 70px;
+  font-size: 25px;
+}
+
+.subTitle {
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  
+  color: #421153;
+}
