@@ -7,7 +7,7 @@ import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Signup } from "./pages/Signup";
 import { Navbar } from "../src/components/Navbar";
-import { CompleteCons } from "./pages/CompleteCons";
+import { Complete } from "./pages/Complete";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/consultoria-completa" element={<CompleteCons />} />
+          <Route path="/consultoria-completa" element={<Complete />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route

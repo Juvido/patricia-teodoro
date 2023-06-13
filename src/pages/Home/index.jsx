@@ -22,7 +22,9 @@ export function Home() {
           <Card cardTitle="COLORAÇÃO PESSOAL" img={Card1} />
           <Card cardTitle="DESCUBRA SEU ESTILO" img={Card2} />
           <Card cardTitle="CLOSET E LOOKS" img={Card3} />
-          <Card cardTitle="CONSULTORIA COMPLETA" img={Card4} />
+          <Link to="/consultoria-completa">
+            <Card cardTitle="CONSULTORIA COMPLETA" img={Card4} />
+          </Link>
         </div>
       </section>
       <h3 className={style.textInvestors}> Conheça quem já investiu! </h3>
