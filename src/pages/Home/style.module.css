@@ -1,3 +1,6 @@
+* {
+  font-style: normal;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -24,7 +27,6 @@
   margin-left: 40px;
   margin-top: 40px;
   letter-spacing: 0.04em;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
@@ -38,7 +40,6 @@
   left: 40px;
   margin-left: 40px;
   margin-top: 10px;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 77px;
@@ -62,7 +63,7 @@
   margin-top: 250px;
   margin-bottom: 50px;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 77px;
   color: #000000;
 }
@@ -74,4 +75,43 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.scheduleSection {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.scheduleSubTitle {
+  width: 573px;
+  height: 77px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 77px;
+  text-align: center;
+  color: #000000;
+}
+
+.scheduleText {
+  width: 574px;
+  height: 134px;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #000000;
+}
+
+.scheduleForm {
+  width: 407.53px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+  color: #421153;
 }

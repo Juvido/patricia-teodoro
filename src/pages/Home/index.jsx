@@ -33,6 +33,7 @@ export function Home() {
           </Link>
         </div>
       </section>
+
       <h3 className={style.textInvestors}> Conheça quem já investiu! </h3>
 
       <section className={style.investorSection}>
@@ -51,6 +52,22 @@ export function Home() {
 
         <a className={style.arrowIcon}> → </a>
       </section>
+
+      <section className={style.scheduleSection}>
+        <h3 className={style.scheduleSubTitle}> Ainda na dúvida?! </h3>
+
+        <p className={style.scheduleText}> Agende uma <span style={{ color: '#98758E' }}>consulta gratuita</span> comigo. <br></br>Disponibilizo 15 mimutos para você me contar um pouco sobre você e resolver suas dúvidas sobre meu serviço. </p>
+
+        <h3 className={style.scheduleSubTitle}> Assine nossa Newsletter </h3>
+        <p className={style.scheduleForm} > Receba conteúdos exclusivos </p>
+        <input />
+      </section>
+
+      <footer>
+        
+
+      </footer>
+
     </div>
   );
 }
