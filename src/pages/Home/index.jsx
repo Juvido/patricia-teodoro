@@ -19,9 +19,15 @@ export function Home() {
 
       <section className={style.container}>
         <div className={style.cardRow}>
-          <Card cardTitle="COLORAÇÃO PESSOAL" img={Card1} />
-          <Card cardTitle="DESCUBRA SEU ESTILO" img={Card2} />
-          <Card cardTitle="CLOSET E LOOKS" img={Card3} />
+          <Link to="/coloracao">
+            <Card cardTitle="COLORAÇÃO PESSOAL" img={Card1} />
+          </Link>
+          <Link to="/descubra">
+            <Card cardTitle="DESCUBRA SEU ESTILO" img={Card2} />
+          </Link>
+          <Link to="/closet">
+            <Card cardTitle="CLOSET E LOOKS" img={Card3} />
+          </Link>
           <Link to="/consultoria-completa">
             <Card cardTitle="CONSULTORIA COMPLETA" img={Card4} />
           </Link>

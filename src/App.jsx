@@ -7,7 +7,7 @@ import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { Signup } from "./pages/Signup";
 import { Navbar } from "../src/components/Navbar";
-import { Complete } from "./pages/Complete";
+import { ServiceDetails } from "./pages/ServiceDetails";
 
 function App() {
   return (
@@ -16,7 +16,12 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/consultoria-completa" element={<Complete />} />
+          <Route path="/coloracao" element={<ServiceDetails id={1}/>} />
+          <Route path="/descubra" element={<ServiceDetails id={2}/>} />
+          <Route path="/closet" element={<ServiceDetails id={3}/>} />
+          <Route path="/consultoria-completa" element={<ServiceDetails id={4}/>} />
+
+
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route
