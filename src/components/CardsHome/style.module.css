@@ -1,12 +1,16 @@
 .cardContainer {
   position: relative;
-  margin-top: 150px;
+  margin-top: 0px;
 }
 
 .img {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+
+.img:hover {
+  filter: grayscale(0.5);
 }
 
 .overlay {

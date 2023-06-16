@@ -1,11 +1,14 @@
-.img {
+.imgInvestor {
   width: 430px;
   height: 275px;
   border-radius: 20px;
   margin-top: 50px;
+  filter: grayscale(1);
 }
-.img:hover{
+
+.imgInvestor:hover {
   mix-blend-mode: luminosity;
+  filter: grayscale(0);
 }
 
 .investorText {

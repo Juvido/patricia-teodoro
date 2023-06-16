@@ -29,12 +29,19 @@
 .description {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.img {
+.imgServices {
   height: 445px;
   width: 663px;
   border-radius: 20px;
+  filter: grayscale(0.8);
+}
+
+.imgServices:hover {
+  filter: grayscale(0.2);
 }
 
 .text {
@@ -70,13 +77,16 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 38px;
-  align-self: flex-end;
+  margin-left: 15em;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #b56a55;
   border-radius: 30px;
 }
-
+.detailsSection {
+  display: flex;
+    flex-direction: column;
+}
 .secondSubTitle {
   font-weight: 500;
   font-size: 48px;
@@ -85,4 +95,56 @@
   letter-spacing: 0.08em;
   color: #000000;
   margin: 120px 0 80px 0;
+}
+
+.stagesDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 2em;
+}
+
+.textStagesDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin: 0 3em;
+}
+
+.clockIcon {
+  width: 33px;
+  height: 30px;
+  color: #421153;
+}
+
+.stagesDiv {
+  width: 312px;
+  height: 312px;
+}
+
+.textStages {
+  width: 317px;
+  height: 357px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #000000;
+}
+
+.timeStage {
+  font-weight: 500;
+  font-size: 24px;
+  align-items: center;
+  letter-spacing: -0.011em;
+  color: #000000;
+}
+
+.durationStages {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }

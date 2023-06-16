@@ -6,6 +6,12 @@ import Card3 from "../../assets/images/Card-3.png";
 import Card4 from "../../assets/images/Card-4.png";
 import Invest1 from "../../assets/images/invest1.png";
 import Invest2 from "../../assets/images/invest2.png";
+import Calender from "../../assets/images/Calendar.png";
+import InstagramIcon from "../../assets/images/instagramIcon.png";
+import YoutubeIcon from "../../assets/images/youtubeIcon.png";
+import PinterestIcon from "../../assets/images/pinterestIcon.png";
+import Logo from "../../assets/images/logo.png";
+
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
 
@@ -15,6 +21,7 @@ export function Home() {
       <Link to="/">
         <a className={style.linkHome}> Home </a>
       </Link>
+      
       <h3 className={style.servicos}> Nossos Serviços </h3>
 
       <section className={style.container}>
@@ -43,10 +50,12 @@ export function Home() {
           <Investor
             investorText="Fazer uma consultoria é resgatar sua essência"
             img={Invest1}
+            className={style.imgInvestor}
           />
           <Investor
             investorText="A Patricia se coloca no seu lugar. O foco é você Não o seu guarda-roupa."
             img={Invest2}
+            className={style.imgInvestor}
           />
         </div>
 
@@ -56,18 +65,52 @@ export function Home() {
       <section className={style.scheduleSection}>
         <h3 className={style.scheduleSubTitle}> Ainda na dúvida?! </h3>
 
-        <p className={style.scheduleText}> Agende uma <span style={{ color: '#98758E' }}>consulta gratuita</span> comigo. <br></br>Disponibilizo 15 mimutos para você me contar um pouco sobre você e resolver suas dúvidas sobre meu serviço. </p>
+        <p className={style.scheduleText}>
+          Agende uma <span style={{ color: "#98758E" }}>consulta gratuita</span>
+          comigo. <br></br>Disponibilizo 15 mimutos para você me contar um pouco
+          sobre você e resolver suas dúvidas sobre meu serviço.
+        </p>
+
+        <img src={Calender} className={style.calender} />
+        <button type="submit" className={style.buttonCalender}>
+          Agendar
+        </button>
 
         <h3 className={style.scheduleSubTitle}> Assine nossa Newsletter </h3>
-        <p className={style.scheduleForm} > Receba conteúdos exclusivos </p>
-        <input />
+
+        <div className={style.inputSection}>
+          <p className={style.textForm}> Receba conteúdos exclusivos </p>
+          <input
+            name="email"
+            type="email"
+            placeholder="e-mail"
+            className={style.emailInput}
+          />
+        </div>
       </section>
 
       <footer>
-        
-
+        <div className={style.navbarFooter}>
+          <img src={Logo} alt="Logo-Patricia" className={style.logo} />
+        </div>
+        <div className={style.socialMedia}>
+          <img
+            src={InstagramIcon}
+            alt="Instragram-Icon"
+            className={style.socialMediaIcons}
+          />
+          <img
+            src={YoutubeIcon}
+            alt="Youtube-Icon"
+            className={style.socialMediaIcons}
+          />
+          <img
+            src={PinterestIcon}
+            alt="Pinterest-Icon"
+            className={style.socialMediaIcons}
+          />
+        </div>
       </footer>
-
     </div>
   );
 }
