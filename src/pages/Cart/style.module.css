@@ -1,0 +1,85 @@
+.mainCart {
+  display: flex;
+  flex-direction: column;
+}
+
+.path {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #626262;
+}
+
+.cartTitle {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 77px;
+  color: #000000;
+  align-self: center;
+  margin: 80px 0;
+}
+
+.cartForm {
+  display: flex;
+  flex-direction: row;
+  gap: 238px;
+  margin-left: 156px;
+}
+
+.formPersonalData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.formAddres {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formAddresNumbers .formAddresCity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.inputPersonalData {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+}
+
+.formBttn {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 50px;
+  background: #b56a55;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.bttnBack {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #421153;
+  margin-left: 20px;
+}

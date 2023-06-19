@@ -7,11 +7,7 @@ import Card4 from "../../assets/images/Card-4.png";
 import Invest1 from "../../assets/images/invest1.png";
 import Invest2 from "../../assets/images/invest2.png";
 import Calender from "../../assets/images/Calendar.png";
-import InstagramIcon from "../../assets/images/instagramIcon.png";
-import YoutubeIcon from "../../assets/images/youtubeIcon.png";
-import PinterestIcon from "../../assets/images/pinterestIcon.png";
 import Logo from "../../assets/images/logo.png";
-
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
 
@@ -89,28 +85,7 @@ export function Home() {
         </div>
       </section>
 
-      <footer>
-        <div className={style.navbarFooter}>
-          <img src={Logo} alt="Logo-Patricia" className={style.logo} />
-        </div>
-        <div className={style.socialMedia}>
-          <img
-            src={InstagramIcon}
-            alt="Instragram-Icon"
-            className={style.socialMediaIcons}
-          />
-          <img
-            src={YoutubeIcon}
-            alt="Youtube-Icon"
-            className={style.socialMediaIcons}
-          />
-          <img
-            src={PinterestIcon}
-            alt="Pinterest-Icon"
-            className={style.socialMediaIcons}
-          />
-        </div>
-      </footer>
+     
     </div>
   );
 }

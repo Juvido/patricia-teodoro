@@ -68,9 +68,11 @@ export function ServiceDetails({ id }) {
                       Seguir comprando
                     </button>
                   </Link>
-                  <button className={style.popupButtonsFinish}>
-                    Finalizar compra
-                  </button>
+                  <Link to="/cart">
+                    <button className={style.popupButtonsFinish}>
+                      Finalizar compra
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

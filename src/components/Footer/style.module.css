@@ -1,0 +1,20 @@
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo {
+    width: 203.98px;
+    height: 65px;
+    margin-top: 150px;
+  }
+  
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 1em;
+    justify-content: center;
+  }
+  
