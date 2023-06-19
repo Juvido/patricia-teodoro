@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Real from "../../assets/images/real.png";
 import ClockIcon from "../../assets/images/clockIcon.png";
@@ -7,6 +8,11 @@ import { servicesOptions } from "./data";
 export function ServiceDetails({ id }) {
   const option = servicesOptions.find((option) => option.id === id);
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleBuyClick = () => {
+    setShowPopup(true);
+  };
   return (
     <>
       <div className={style.general}>
@@ -28,10 +34,47 @@ export function ServiceDetails({ id }) {
               <p className={style.value}>{option?.price}</p>
             </div>
 
-            <Link to="/carrinho">
-              <button className={style.button}> Comprar </button>
-            </Link>
+            <button className={style.button} onClick={handleBuyClick}>
+              Comprar
+            </button>
           </div>
+          {showPopup && (
+            <div className={style.popup}>
+              <button
+                onClick={() => setShowPopup(false)}
+                className={style.buttonClose}
+              >
+                x
+              </button>
+              <div className={style.popupContent}>
+                <h2 className={style.popupTitle}>
+                  Serviço adicionado ao carrinho com sucesso!
+                </h2>
+
+                <div className={style.popupDetails}>
+                  <img
+                    src={option?.image}
+                    alt={option?.image}
+                    className={style.popupImgServices}
+                  />
+                  <div className={style.popupServices}>
+                    <h2 className={style.popupSubTitle}> {option?.title} </h2>
+                    <p className={style.popupvalue}> R$ {option?.price}</p>
+                  </div>
+                </div>
+                <div className={style.popupButtons}>
+                  <Link to="/">
+                    <button className={style.popupButtonsContinue}>
+                      Seguir comprando
+                    </button>
+                  </Link>
+                  <button className={style.popupButtonsFinish}>
+                    Finalizar compra
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
 
         <section className={style.detailsSection}>
