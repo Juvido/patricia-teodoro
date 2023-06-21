@@ -11,7 +11,7 @@ export function Navbar() {
       <Link to="/">
         <a> Sobre </a>
       </Link>
-        <a> Servicos </a>
+        <a> Serviços </a>
         <img src={Logo} alt="Patricia Teodoro" />
         <a> Blog </a>
         <a> Contato </a>

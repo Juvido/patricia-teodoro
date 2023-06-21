@@ -4,6 +4,7 @@
 }
 
 .path {
+  margin: 2em 2em;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -18,7 +19,7 @@
   line-height: 77px;
   color: #000000;
   align-self: center;
-  margin: 80px 0;
+  margin: 40px 0;
 }
 
 .cartForm {
@@ -38,26 +39,54 @@
 .formAddres {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  margin: 10px 0;
 }
 
 .formAddresNumbers .formAddresCity {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
-label {
+form.cartForm label {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #333333;
 }
 
-.inputPersonalData {
+form.cartForm input::placeholder {
+  width: 90px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #959595;
+}
+
+form.cartForm .inputPersonalData {
+  width: 207px;
+  height: 36px;
   background: #ffffff;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
+}
+
+form.cartForm .inputAddressStreet {
+  width: 417px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+}
+
+form.cartForm .inputAddressDetail {
+  width: 182px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  margin-right: 55px;
 }
 
 .formBttn {
@@ -74,6 +103,7 @@ label {
   align-items: center;
   justify-content: center;
   align-self: flex-end;
+  margin-top: 1.5em;
 }
 
 .bttnBack {

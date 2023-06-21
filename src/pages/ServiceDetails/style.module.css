@@ -86,7 +86,9 @@
 .detailsSection {
   display: flex;
   flex-direction: column;
+  height: 120vh;
 }
+
 .secondSubTitle {
   font-weight: 500;
   font-size: 48px;

@@ -35,23 +35,23 @@ export function Cart() {
         </div>
         <div className={style.formAddres}>
           <label> Telefone </label>
-          <input type="text" required={true} placeholder="xx xxxxx-xxxx" />
+          <input type="text" required={true} placeholder="xx xxxxx-xxxx" className={style.inputPersonalData} />
           <label> Endereço </label>
-          <input type="text" required={true} placeholder="Rua" />
+          <input type="text" required={true} placeholder="Rua" className={style.inputAddressStreet} />
           <div className={style.formAddresNumbers}>
-            <input type="text" required={true} placeholder="Numero" />
-            <input type="text" required={true} placeholder="CEP" />
+            <input type="text" required={true} placeholder="Numero" className={style.inputAddressDetail}/>
+            <input type="text" required={true} placeholder="CEP" className={style.inputAddressDetail}/>
           </div>
           <div className={style.formAddresCity}>
-            <input type="text" required={true} placeholder="Cidade" />
-            <input type="text" required={true} placeholder="Estado" />
+            <input type="text" required={true} placeholder="Cidade" className={style.inputAddressDetail}/>
+            <input type="text" required={true} placeholder="Estado" className={style.inputAddressDetail} />
           </div>
           <button className={style.formBttn}> Prosseguir </button>
         </div>
       </form>
 
       <Link to="/">
-        <a className={style.bttnBack}> ← Voltar </a>
+        <a className={style.bttnBack}> <span style={{ color: "#777777", fontWeight:"900"  }}> ← </span> Voltar </a>
       </Link>
     </div>
   );
