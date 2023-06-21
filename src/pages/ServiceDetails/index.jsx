@@ -7,11 +7,18 @@ import { servicesOptions } from "./data";
 
 export function ServiceDetails({ id }) {
   const option = servicesOptions.find((option) => option.id === id);
-
   const [showPopup, setShowPopup] = useState(false);
+  const [numberShop, setnumberShop] = useState(0);
+  const [shoppingList, setShoppingList] = useState([]);
 
-  const handleBuyClick = () => {
+  const handleClick = () => {
     setShowPopup(true);
+
+    setnumberShop(numberShop + 1);
+
+    const newShop = { id: `{option?.id}`, nome: `{option?.title}` };
+    setShoppingList([...shoppingList, newShop]);
+    updateCartCount(numberShop + 1);
   };
   return (
     <>
@@ -34,7 +41,7 @@ export function ServiceDetails({ id }) {
               <p className={style.value}>{option?.price}</p>
             </div>
 
-            <button className={style.button} onClick={handleBuyClick}>
+            <button className={style.button} onClick={handleClick}>
               Comprar
             </button>
           </div>
@@ -68,7 +75,7 @@ export function ServiceDetails({ id }) {
                       Seguir comprando
                     </button>
                   </Link>
-                  <Link to="/cart">
+                  <Link to="/finalizar">
                     <button className={style.popupButtonsFinish}>
                       Finalizar compra
                     </button>

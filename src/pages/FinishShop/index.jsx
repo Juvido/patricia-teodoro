@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./style.module.css";
 
-export function Cart() {
+export function FinishShop() {
   return (
     <div className={style.mainCart}>
       <a className={style.path}>
