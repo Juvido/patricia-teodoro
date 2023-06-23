@@ -16,8 +16,10 @@ export function Navbar({cartCount}) {
         <a> Blog </a>
         <a> Contato </a>
         <div className={style.bagIcon}>
+        <Link to="/carrinho">
         <img src={Bag} alt="bag" />
         <span className={style.shopCount}>{cartCount}</span>
+        </Link>
         </div>
       </div>
     </>
