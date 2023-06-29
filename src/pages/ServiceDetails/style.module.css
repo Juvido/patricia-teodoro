@@ -34,8 +34,7 @@
 }
 
 .imgServices {
-  height: 445px;
-  width: 663px;
+  height: 430px;
   border-radius: 20px;
   filter: grayscale(0.8);
 }
@@ -223,7 +222,6 @@
 }
 
 .popupImgServices {
-  width: 306px;
   height: 195px;
 }
 
@@ -245,12 +243,12 @@
   color: #b56a55;
 }
 
-.popupButtonsFinish{
+.popupButtonsFinish {
   width: 316px;
   height: 61px;
   border-radius: 30px;
-  background: #B56A55;
+  background: #b56a55;
   font-size: 24px;
   line-height: 38px;
-  color: #FFFFFF;
+  color: #ffffff;
 }

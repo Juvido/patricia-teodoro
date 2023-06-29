@@ -5,11 +5,11 @@ import ClockIcon from "../../assets/images/clockIcon.png";
 import style from "./style.module.css";
 import { servicesOptions } from "./data";
 
-export function ServiceDetails({ id, updateCartCount }) {
+export function ServiceDetails({ id, updateCartCount, setShoppingList }) {
   const option = servicesOptions.find((option) => option.id === id);
   const [showPopup, setShowPopup] = useState(false);
   const [numberShop, setNumberShop] = useState(0);
-  const [shoppingList, setShoppingList] = useState([]);
+  
 
   const handleClick = () => {
     setShowPopup(true);
@@ -17,9 +17,8 @@ export function ServiceDetails({ id, updateCartCount }) {
     setNumberShop(newNumberShop);
 
     const newShop = { id: option?.id, nome: option?.title };
-    const updatedShoppingList = [...shoppingList, newShop];
-    setShoppingList(updatedShoppingList)
-    updateCartCount(numberShop + 1);
+    setShoppingList((prevList) => [...prevList, newShop]);
+    updateCartCount(newNumberShop);
   };
   return (
     <>
